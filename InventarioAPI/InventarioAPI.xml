@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InventarioAPI</name>
+    </assembly>
+    <members>
+        <member name="M:InventarioAPI.Controllers.InventariosController.GetInventarios">
+            <summary>
+            GetInventarios devuelve todos los inventarios dados de alta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InventarioAPI.Controllers.InventariosController.GetInventarioByName(System.String)">
+            <summary>
+            Esta funcion devuelve un inventario
+            </summary>
+            <param name="name"> Filtra los inventarios por el nombre</param>
+            <returns></returns>
+        </member>
+        <member name="M:InventarioAPI.Controllers.InventariosController.CrearInventario(InventarioAPI.Models.Inventario)">
+            <summary>
+            Este metodo añadira un inventario si no existe
+            </summary>
+            <param name="inventario"> El objeto a añadir</param>
+            <returns>Retornara un 201 created si es ok y un error si el inventario ya existe o hay un error de sistema</returns>
+        </member>
+    </members>
+</doc>
